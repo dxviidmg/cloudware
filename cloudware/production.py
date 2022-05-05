@@ -1,3 +1,3 @@
 from .settings import *
 
-ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com']
+ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com', '.herokuapp.com']
