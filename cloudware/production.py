@@ -1,9 +1,13 @@
+from pickle import FALSE
 from .settings import *
 
 ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com']
 
-#import dj_database_url
+DEBUG = FALSE
 
-#db_from_env = dj_database_url.config(conn_max_age=500)
-#print(db_from_env)
-#DATABASES["default"].update(db_from_env)
+if DEBUG:
+    STATICFILES_DIRS = [
+        BASE_DIR / 'static'
+    ]
+else:
+    STATIC_ROOT = BASE_DIR / 'static'
