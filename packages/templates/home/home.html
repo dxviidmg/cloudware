@@ -28,7 +28,7 @@
   }
 
 
-  #section-1 {
+  #initial-section {
     height: 400px; 
     background-image: url("{% static 'images/logo1.png' %}");
     background-repeat: no-repeat;
@@ -59,20 +59,17 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cloudware</a>
+      <a class="navbar-brand" href="#initial-section">Cloudware</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#packages-section">Paquetes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Paquetes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+            <a class="nav-link active" aria-current="page" href="#contact-section">Contacto</a>
           </li>
         </ul>
       </div>
@@ -86,14 +83,14 @@
     <div style="height: 56px;">
     </div>  
 
-    <div id="section-1">
+    <div id="initial-section">
     </div>  
     <!-- Packages section -->
     <div class="container-fluid packages">
   
       <!-- Three columns of text below the carousel -->
 
-        <div class="row">
+        <div id="packages-section" class="row">
             <div class="col-12">
                 <h1>Paquetes</h1>
                 <h2>Inalambrico</h2>
@@ -174,26 +171,11 @@
 
 
 
-    
-    <div class="container">
-  
-        <!-- Three columns of text below the carousel -->
-  
-           <div class=" row">
-              <div class="col-12">
-                  <h1>Cotiza</h1>
-              </div>
-           </div>
-        <div class="row">
 
-            <h2>aqui va un formulario</h2>
-        </div><!-- /.row -->
-      
-      </div><!-- /.container -->
-
+  
     
     <!-- FOOTER -->
-    <div id="contacto-section" class="container">
+    <div id="contact-section" class="container">
       
       <div class="row">
         <div>

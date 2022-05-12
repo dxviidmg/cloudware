@@ -10,4 +10,4 @@ def home(request):
         'optic_fiber_packages': optic_fiber_packages,
     }
     return render(request, 'home/home.html', context=context)
-
+    
