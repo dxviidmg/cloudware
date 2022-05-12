@@ -5,9 +5,5 @@ ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com']
 
 DEBUG = FALSE
 
-if DEBUG:
-    STATICFILES_DIRS = [
-        BASE_DIR / 'static'
-    ]
-else:
+if not DEBUG:
     STATIC_ROOT = BASE_DIR / 'static'
