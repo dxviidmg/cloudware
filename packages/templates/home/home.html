@@ -11,15 +11,17 @@
 
         <style>
             body {
-                background-color: rgb(234, 234, 241);
+/*                background-color: rgb(234, 234, 241);*/
             }
             h1 {
-                font-size: 50px;
+                font-size: 60px;
                 padding: 40px;
+            }
+            #optic-fiber-title {
+                padding-top: 60px;
             }
             h2 {
                 font-size: 35px;
-                padding: 20px;
             }
 
             h3 {
@@ -46,18 +48,32 @@
             padding: 20px;
             }
 
-            #packages-section, #quotes-section{
-            padding-bottom: 50px;
-            }
-            #contact-section{
-            background-color: rgb(175, 135, 207);
+            #packages-section, #quotes-section, #contact-section, #quotes-section, #enterprise-info-section{
             padding-bottom: 50px;
             }
 
-            #quotes-section{
-            background-color: bisque;
-            padding-bottom: 50px;
+            #quotes-section, #enterprise-info-section{
+                background-color: rgb(197, 137, 253);
+                
             }
+
+            #contact-section{
+            background-color: black;
+            color: white;
+            }
+
+            .card-header {
+                background-color: rgb(197, 137, 253);
+                border-width: 5px;
+                border: blueviolet;
+
+            }
+
+            .card-body{
+                background-color: antiquewhite;
+
+            }
+
         </style>
     </head>
 
@@ -73,6 +89,9 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#enterprise-info-section">¿Quienes somos?</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#packages-section">Paquetes</a>
                             </li>
 
@@ -82,6 +101,8 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#contact-section">Contacto</a>
                             </li>
+
+                            
                         </ul>
                     </div>
                 </div>
@@ -95,6 +116,27 @@
             <div id="initial-section">
             </div>  
 
+            <div id="enterprise-info-section">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h1>¿Quienes somos?</h1>
+                        </div>
+                        <div class="col-6">
+                            <h1>Misión</h1>
+                            <p>Ofrecer a nuestros clientes un servicio de calidad, confiable y oportuno para sus labores de interconexion,
+                                con una gestion innovadora y eficiente en la prestacion de servicios de redes compartidas, llevandose a cabo 
+                                a traves de la ilusion y el desarrollo de nuestro equipo de trabajo.</p>
+                        </div>
+                        <div class="col-6">
+                            <h1>Visión</h1>
+                            <p>Mantener, mejorar y crecer tanto nuestro servicio, como nuestra infrestructura a nivel regional.
+                                En la mente del usuario debemos aparecer siempre como su mejor opcion en telecomunicaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="packages-section" class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -106,10 +148,10 @@
                     {%for package in wireless_packages%}
                         <div class="col-lg-2">
                             <div class="card">
+                                <div class="card-header">
+                                    <h2>{{package.name}}</h2>
+                                </div>
                                 <div class="card-body">
-                                    <div class="card-header">
-                                        <h2>{{package.name}}</h2>
-                                    </div>
                                     <h3>{{package.get_bandwidth}}</h3>
                                     <h3>${{package.price}}</h3>
                                 </div>
@@ -119,16 +161,16 @@
                     </div>
 
                     <div class="col-12">
-                        <h2>Fibra optica</h2>
+                        <h2 id="optic-fiber-title">Fibra optica</h2>
                     </div>
                     <div class="row justify-content-md-center ">
                     {%for package in optic_fiber_packages%}
                         <div class="col-lg-2">  
                             <div class="card">
+                                <div class="card-header">
+                                    <h2>{{package.name}}</h2>
+                                </div>
                                 <div class="card-body">
-                                    <div class="card-header">
-                                        <h2>{{package.name}}</h2>
-                                    </div>
                                     <h3>{{package.get_bandwidth}}</h3>
                                     <h3>${{package.price}}</h3>
                                 </div>
