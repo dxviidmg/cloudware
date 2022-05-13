@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 
 
 <!DOCTYPE html>
@@ -49,11 +50,17 @@
     padding: 20px;
   }
 
-  #packages-section{
+  #packages-section, #quotes-section{
     padding-bottom: 50px;
   }
   #contact-section{
     background-color: rgb(175, 135, 207);
+    padding-bottom: 50px;
+/*    color: rgb(244, 228, 228); */
+  }
+
+  #quotes-section{
+    background-color: bisque;
     padding-bottom: 50px;
 /*    color: rgb(244, 228, 228); */
   }
@@ -78,6 +85,11 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#packages-section">Paquetes</a>
           </li>
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#quotes-section">Cotiza</a>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#contact-section">Contacto</a>
           </li>
@@ -170,6 +182,35 @@
     </div>
     </div>
     
+
+
+
+
+
+
+    <div id="quotes-section" class="container-fluid">
+      <div>
+        <h1>Cotiza</h1>
+      </div>
+      <div>
+      <div class="container">
+
+        <form action="." method="post">
+          {% csrf_token %}
+          {{quote_form|crispy}}
+          {{address_form|crispy}}
+          <input type="submit" value="Register">
+      </form>
+
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
     <div id="contact-section">
       <div  class="container">
       
