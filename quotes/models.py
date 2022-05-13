@@ -20,9 +20,9 @@ class Person(models.Model):
 
 
 class Address(models.Model):
-    city = models.CharField(max_length=50)
     street_address = models.CharField(max_length=50)
     location = models.CharField(max_length=30)
+    city = models.CharField(max_length=50)
     zip_code = models.CharField(max_length=5)
 
 
