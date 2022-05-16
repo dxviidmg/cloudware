@@ -32,7 +32,6 @@
             }
             #initial-section {
                 height: 400px; 
-                background: rgba(0, 0, 0, .1);
                 background-image: url("{% static 'images/logo1.png' %}");
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -52,9 +51,13 @@
             padding-bottom: 50px;
             }
 
-            #quotes-section, #enterprise-info-section{
+            #quotes-section{
                 background-color: rgb(197, 137, 253);
                 
+            }
+
+            #enterprise-info-section{
+                background-color: antiquewhite;
             }
 
             #contact-section{
@@ -118,17 +121,20 @@
 
             <div id="enterprise-info-section">
                 <div class="container">
-                    <div class="row">
+                    <div class="row justify-content-md-center">
                         <div>
                             <h1>¿Quienes somos?</h1>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <h1>Misión</h1>
                             <p>Ofrecer a nuestros clientes un servicio de calidad, confiable y oportuno para sus labores de interconexion,
                                 con una gestion innovadora y eficiente en la prestacion de servicios de redes compartidas, llevandose a cabo 
                                 a traves de la ilusion y el desarrollo de nuestro equipo de trabajo.</p>
                         </div>
-                        <div class="col-6">
+                        <div class="col-1">
+                        
+                        </div>
+                        <div class="col-4">
                             <h1>Visión</h1>
                             <p>Mantener, mejorar y crecer tanto nuestro servicio, como nuestra infrestructura a nivel regional.
                                 En la mente del usuario debemos aparecer siempre como su mejor opcion en telecomunicaciones.</p>
@@ -144,7 +150,7 @@
                         <h2>Inalambrico</h2>
                     </div>
 
-                    <div class="row justify-content-md-center ">
+                    <div class="row justify-content-md-center">
                     {%for package in wireless_packages%}
                         <div class="col-lg-2">
                             <div class="card">
@@ -191,7 +197,8 @@
                         {%csrf_token%}
                         {{quote_form|crispy}}
                         {{address_form|crispy}}
-                        <input type="submit" value="Register">
+                        <br>
+                        <input type="submit" value="Cotizar" class="btn btn-light">
                     </form>
                     </div>
                 </div>
