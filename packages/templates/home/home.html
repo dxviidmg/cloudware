@@ -60,11 +60,14 @@
                 background-color: antiquewhite;
             }
 
-            #contact-section{
+            #contact-section, .link-contact-section{
             background-color: black;
             color: white;
             }
 
+            .link-contact-section:hover{
+                color: gray;
+            }
             .card-header {
                 background-color: rgb(197, 137, 253);
                 border-width: 5px;
@@ -222,14 +225,37 @@
                             <i class="fa-solid fa-envelope"></i>
                             <p>contacto@cloudwaremx.com</p>
                         </div>
-                        <div class="col-6 contacto-info">
+                        <div class="col-4 contacto-info">
                             <i class="fa-solid fa-map-location"></i> <p>Calle Efren Rebolledo #24, Col. Centro norte
                             Actopan Hidalgo, 42500</p>
                         </div>
-                        <div class="col-6 contacto-info">
+                        <div class="col-4 contacto-info">
                             <i class="fa-solid fa-circle-check"></i>
                             <p>Folio IFT: IFT/223/UCS/AUT-COM-077/2018</p>
                         </div>
+                        <div class="col-4 contacto-info">
+                            <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                            <p>Aviso de privacidad</p>
+                        </div>
+
+                        <div class="col-4 contacto-info">
+                            <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                            <p>Carta de derechos minimos</p>
+                        </div>
+
+                        <div class="col-4 contacto-info">
+                            
+                            <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                            <p>Código de politicas de gestión de tráfico</p>
+                        </div>
+
+                        <div class="col-4 contacto-info">
+                            
+                            <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                            <p>Código de prácticas comerciales</p>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
