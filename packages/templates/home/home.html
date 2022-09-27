@@ -14,8 +14,10 @@
 /*                background-color: rgb(234, 234, 241);*/
             }
             h1 {
-                font-size: 60px;
-                padding: 40px;
+                color: white;
+                font-size: 50px;
+                padding: 10px;
+                text-align: center;
             }
             #optic-fiber-title {
                 padding-top: 60px;
@@ -29,15 +31,19 @@
             }
             #aux-section{
                 height: 56px;
-            }
-            #initial-section {
-                height: 400px; 
-                background-image: url("{% static 'images/logo1.png' %}");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 70% auto;
+            }            
+            .text {
+                padding: 60px;
+                font-size: 20px;
             }
 
+            .f1 {
+                height: 85px; 
+                background-image: url("{% static 'images/Wire.png' %}");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 100% auto;
+            }
 
             .contacto-info{
             font-weight: 500;
@@ -47,8 +53,16 @@
             padding: 20px;
             }
 
-            #packages-section, #quotes-section, #contact-section, #quotes-section, #enterprise-info-section{
-            padding-bottom: 50px;
+            #initial-section, #packages-section, #quotes-section, #quotes-section, #enterprise-info-section{
+            padding-bottom: 40px;
+            height: 100%; 
+            background-image: url("{% static 'images/Background.jpg' %}");
+            background-position: center center;
+            background-size: 100% auto;
+            }
+
+            #packages-section{
+            padding-bottom: 0px;
             }
 
             #quotes-section{
@@ -69,24 +83,29 @@
                 color: gray;
             }
             .card-header {
-                background-color: rgb(197, 137, 253);
-                border-width: 5px;
-                border: blueviolet;
-
+                background-color: transparent;
+                font-style: italic;
+                text-align: center;
             }
 
             .card-body{
-                background-color: antiquewhite;
-
+                text-align: center;
             }
-
+            .mpbs {
+                color: #d9e021;
+                font-size: 40px;
+            }
+            .price-wireless {
+                color: #bc42c3;
+                font-size: 50px;
+            }
         </style>
     </head>
 
     <body>
 
         <header>
-            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: white;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#initial-section">Cloudware</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,14 +114,14 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav me-auto mb-2 mb-md-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#enterprise-info-section">¿Quienes somos?</a>
+                                <a class="nav-link active" aria-current="page" href="#aux-section">¿Quienes somos?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#packages-section">Paquetes</a>
+                                <a class="nav-link active" aria-current="page" href="#packages-section-link">Paquetes</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#quotes-section">Cotiza</a>
+                                <a class="nav-link active" aria-current="page" href="#quotes-section-link">Cotiza</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#contact-section">Contacto</a>
@@ -115,150 +134,197 @@
             </nav>
         </header>
 
-        <main class="text-center">
+        <main>
             <div id="aux-section">
             </div>  
 
             <div id="initial-section">
+                <div class="row">
+                    <div class="col-5" style="background-color: #A58CBF;">
+                        <h1>Conectando tu mundo</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <p class="text">Te brindamos las mejores soluciones de conexión a internet,
+                            que se adaptan a tus necesidades.<br>
+                            Tenemos la confianza de que nuestra experiencia y dedicación nos respalda y te garantiza un servicio de calidad.</p>
+                    </div>
+                </div>
+
+            </div>
+
+                
             </div>  
 
             <div id="enterprise-info-section">
-                <div class="container">
-                    <div class="row justify-content-md-center">
-                        <div>
-                            <h1>¿Quienes somos?</h1>
-                        </div>
-                        <div class="col-4">
-                            <h1>Misión</h1>
-                            <p>Ofrecer a nuestros clientes un servicio de calidad, confiable y oportuno para sus labores de interconexion,
-                                con una gestion innovadora y eficiente en la prestacion de servicios de redes compartidas, llevandose a cabo 
-                                a traves de la ilusion y el desarrollo de nuestro equipo de trabajo.</p>
-                        </div>
-                        <div class="col-1">
-                        
-                        </div>
-                        <div class="col-4">
-                            <h1>Visión</h1>
-                            <p>Mantener, mejorar y crecer tanto nuestro servicio, como nuestra infrestructura a nivel regional.
-                                En la mente del usuario debemos aparecer siempre como su mejor opcion en telecomunicaciones.</p>
-                        </div>
+                <div class="row">
+                    <div class="col-5" style="background-color: #E5AB70;">
+                        <h1>CloudWare</h1>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-7">
+                        <p class="text">Somos una empresa Hidalguense, que nace del esfuerzo, trabajo y dedicación, en
+                            busca de satisfacer la necesidad cotidiana de contar con una conexión a internet,
+                            confiable y de calidad.<br>
+                            El desarrollo tecnológico se encuentra en constante cambio, y es por eso que nos
+                            esforzamos a diario para brindar el servicio que te mereces.</p>
+                    </div>
+                </div>
+            </div>  
+
+            <div id="imagess">
+                <div class="row">
+                    <div class=" col-12 f1" id="packages-section-link">
+
+                    </div>
+                </div>
+
+
+            </div>  
 
             <div id="packages-section" class="container-fluid">
+                    <div class="row">
+                        <div class="col-5" style="background-color: #6699CC;">
+                            <h1>Inalambrico</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+    
+    
+                        <div class="row justify-content-md-center " style="padding: 30px; padding-bottom: 20px;">
+                        {%for package in wireless_packages%}
+                            <div class="col-lg-2" >  
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h2>{{package.name}}</h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="mpbs">{{package.get_bandwidth}}</h3>
+                                        <h3 class="price-wireless">${{package.price}}</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        {%endfor%}
+                        </div>
+                    </div>
+
                 <div class="row">
-                    <div class="col-12">
-                        <h1>Paquetes</h1>
-                        <h2>Inalambrico</h2>
+                    <div class="col-5" style="background-color: #DC9FE2;">
+                        <h1>Fibra óptica</h1>
                     </div>
+                </div>
 
-                    <div class="row justify-content-md-center">
-                    {%for package in wireless_packages%}
-                        <div class="col-lg-2">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h2>{{package.name}}</h2>
-                                </div>
-                                <div class="card-body">
-                                    <h3>{{package.get_bandwidth}}</h3>
-                                    <h3>${{package.price}}</h3>
-                                </div>
-                            </div>
-                        </div>
-                    {%endfor%}
-                    </div>
+                <div class="row">
 
-                    <div class="col-12">
-                        <h2 id="optic-fiber-title">Fibra optica</h2>
-                    </div>
-                    <div class="row justify-content-md-center ">
+
+                    <div class="row justify-content-md-center " style="padding: 30px; padding-bottom: 60px;">
                     {%for package in optic_fiber_packages%}
-                        <div class="col-lg-2">  
+                        <div class="col-lg-2" >  
                             <div class="card">
                                 <div class="card-header">
                                     <h2>{{package.name}}</h2>
                                 </div>
                                 <div class="card-body">
-                                    <h3>{{package.get_bandwidth}}</h3>
-                                    <h3>${{package.price}}</h3>
+                                    <h3 class="mpbs">{{package.get_bandwidth}}</h3>
+                                    <h3 class="price-wireless">${{package.price}}</h3>
                                 </div>
                             </div>
                         </div>
                     {%endfor%}
                     </div>
                 </div>
-            </div>
 
-            <div id="quotes-section" class="container-fluid">
-                <div>
-                    <h1>Cotiza</h1>
-                </div>
-                <div>
-                    <div class="container">
-                    <form action="." method="post">
-                        {%csrf_token%}
-                        {{quote_form|crispy}}
-                        {{address_form|crispy}}
-                        <br>
-                        <input type="submit" value="Cotizar" class="btn btn-light">
-                    </form>
+            </div>
+            <div id="quotes-section-link" style="height: 56px;"></div>
+            <div id="quotes-section">
+                <div class="row">
+                    <div class="col-5" style="background-color: #E5AB70;">
+                        <h1>Cotiza</h1>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div style="padding: 30px;">
+                        <form action="." method="post" style="padding: 30px; background-color: #93278F; color: white;">
+                            {%csrf_token%}
+                            <div class="row">
+                                <div class="col-6">{{quote_form|crispy}}</div>
+                                <div class="col-6">{{address_form|crispy}}
+                                    <br>
+                                    <input type="submit" value="Cotizar" class="btn btn-light">
+                                </div>
+                            </div>
+
+
+                        </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.7243570392943!2d-98.944043!3d20.270263399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d171eade3730cd%3A0x7239a69fced9d958!2sC.%20Efr%C3%A9n%20Rebolledo%2024%2C%20Centro%20Nte%2C%2042500%20Actopan%2C%20Hgo.!5e0!3m2!1ses!2smx!4v1664304732393!5m2!1ses!2smx" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                    </div>
+                </div>
+
             </div>
+
 
             <div id="contact-section">
-                <div  class="container">
-                    <div class="row">
-                        <div>
-                            <h1>Contacto</h1>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <i class="fa-solid fa-clock"></i>
-                            <p>Lunes a Viernes de 9:00 - 18:00 y Sábado de 9:30 -15:30</p>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <i class="fa-solid fa-phone"></i>
-                            </i><p>7721292969</p>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>contacto@cloudwaremx.com</p>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <i class="fa-solid fa-map-location"></i> <p>Calle Efren Rebolledo #24, Col. Centro norte
-                            Actopan Hidalgo, 42500</p>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <i class="fa-solid fa-circle-check"></i>
-                            <p>Folio IFT: IFT/223/UCS/AUT-COM-077/2018</p>
-                        </div>
-                        <div class="col-4 contacto-info">
-                            <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                            <p>Aviso de privacidad</p>
-                        </div>
-
-                        <div class="col-4 contacto-info">
-                            <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                            <p>Carta de derechos minimos</p>
-                        </div>
-
-                        <div class="col-4 contacto-info">
-                            
-                            <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                            <p>Código de politicas de gestión de tráfico</p>
-                        </div>
-
-                        <div class="col-4 contacto-info">
-                            
-                            <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                            <p>Código de prácticas comerciales</p>
-                        </div>
-
-
+                <div class="row">
+                    <div>
+                        <h1>Contacto</h1>
                     </div>
+                    <div class="col-4 contacto-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Lunes a Viernes de 9:00 - 18:00 y Sábado de 9:30 -15:30</p>
+                    </div>
+                    <div class="col-4 contacto-info">
+                        <i class="fa-solid fa-phone"></i>
+                        </i><p>7721292969</p>
+                    </div>
+                    <div class="col-4 contacto-info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contacto@cloudwaremx.com</p>
+                    </div>
+                    <div class="col-4 contacto-info">
+                        <a class="link-contact-section" href="{% static 'pdfs/Profeco.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                        <p>Profeco</p>
+                    </div>
+                    <div class="col-4 contacto-info">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <p>Folio IFT: IFT/223/UCS/AUT-COM-077/2018</p>
+                    </div>
+                    <div class="col-4 contacto-info">
+                        <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                        <p>Aviso de privacidad</p>
+                    </div>
+
+                    <div class="col-4 contacto-info">
+                        <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                        <p>Carta de derechos minimos</p>
+                    </div>
+
+                    <div class="col-4 contacto-info">
+                        
+                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                        <p>Código de politicas de gestión de tráfico</p>
+                    </div>
+
+                    <div class="col-4 contacto-info">
+                        
+                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
+                        <p>Código de prácticas comerciales</p>
+                    </div>
+
+
                 </div>
+
             </div>
+            </div>
+            
         </main>
 
 
