@@ -10,9 +10,6 @@
         <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
 
         <style>
-            body {
-/*                background-color: rgb(234, 234, 241);*/
-            }
             h1 {
                 color: white;
                 font-size: 50px;
@@ -37,12 +34,11 @@
                 font-size: 20px;
             }
 
-            .f1 {
-                height: 450px; 
-                background-image: url("{% static 'images/Wire.png' %}");
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: 100% auto;
+            .image-wire {
+                height: 300px; 
+                background-image: url("{% static 'images/Wire1.png'%}");
+                background-position: center;
+                background-size: 100%;
             }
 
             .contacto-info{
@@ -55,11 +51,14 @@
 
             #packages-section, #quotes-section, #enterprise-info-section{
             padding-top: 100px;
-            padding-bottom: 40px;
             height: 100%; 
             background-image: url("{% static 'images/Background.jpg' %}");
             background-position: center center;
             background-size: 100% auto;
+            }
+
+            #packages-section, #quotes-section{
+            padding-bottom: 40px;
             }
 
             #enterprise-info-section{
@@ -90,7 +89,7 @@
                 font-style: italic;
                 text-align: center;
                 padding-top: 0px;
-  padding-bottom: 0px;
+                padding-bottom: 0px;
             }
 
             .card-body{
@@ -99,7 +98,7 @@
                 background-position: center center;
                 background-size: 100% auto;
                 padding-top: 0px;
-  padding-bottom: 0px;
+                padding-bottom: 0px;
             }
             .mpbs {
                 color: #d9e021;
@@ -112,13 +111,13 @@
             }
 
             .navbar-brand {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
 
-.navbar-brand > img {
-  height: 100px;
-}
+            .navbar-brand > img {
+                height: 100px;
+            }
         </style>
     </head>
 
@@ -191,9 +190,9 @@
                 </div>
             </div>  
 
-            <div id="imagess">
+            <div id="image-section">
                 <div class="row">
-                    <div class=" col-12 f1">
+                    <div class=" col-12 image-wire">
 
                     </div>
                 </div>
