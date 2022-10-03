@@ -103,7 +103,7 @@
 
             .package-background{
                 text-align: center;
-                background-image: url("{% static 'images/r2.png' %}");
+                background-image: url("{% static 'images/Icon2.png' %}");
                 background-position: center center;
                 background-size: 100% auto;
                 background-repeat: no-repeat;
@@ -112,12 +112,18 @@
             }
             .mpbs {
                 color: #d9e021;
-                font-size: 42px;
+                font-size: 45px;
                 font-weight: bold;
             }
+            .package-name {
+                font-size: 40px;
+                font-weight: bold;
+                margin: 0px;
+            }
+
             .price-wireless {
                 color: #bc42c3;
-                font-size: 42px;
+                font-size: 45px;
             }
 
             .navbar-brand {
@@ -229,11 +235,11 @@
                     
     
     
-                        <div class="row justify-content-md-center " style="padding: 10px; padding-bottom: 20px;">
+                        <div class="row justify-content-md-center " style="padding: 30px; padding-bottom: 40px;">
                         {%for package in wireless_packages%}
                             <div class="col-6 col-md-2" >  
                                 <div class="card border-0 package-background">
-                                        <h2>{{package.name}}</h2>
+                                        <h2 class="package-name">{{package.name}}</h2>
                                     <div class="card-body ">
                                         <h3 class="mpbs">{{package.get_bandwidth}}</h3>
                                         <h3 class="price-wireless">${{package.price}}</h3>
@@ -256,7 +262,7 @@
                     {%for package in optic_fiber_packages%}
                     <div class="col-6 col-md-2" >  
                         <div class="card border-0 package-background">
-                                <h2>{{package.name}}</h2>
+                                <h2 class="package-name">{{package.name}}</h2>
                             <div class="card-body ">
                                 <h3 class="mpbs">{{package.get_bandwidth}}</h3>
                                 <h3 class="price-wireless">${{package.price}}</h3>
@@ -303,49 +309,29 @@
 
             <div id="contact-section">
                 <div class="row justify-content-md-center text-center">
-                    <div>
+                    <div class="col-12">
                         <h1>Contacto</h1>
                     </div>
                     <div class="col-4 contacto-info">
-                        <i class="fa-solid fa-clock"></i>
-                        <p>Lunes a Viernes de 9:00 - 18:00 y Sábado de 9:30 -15:30</p>
+                        <h3>Información legal</h3>
+                        <a class="link-contact-section" href="{% static 'pdfs/Profeco.pdf'%}"><p>Profeco</p></a>
+                        <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><p>Aviso de privacidad</p></a>
+                        <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><p>Carta de derechos minimos</p></a>
+                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><p>Código de politicas de gestión de tráfico</p></a>
+                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><p>Código de prácticas comerciales</p></a>
                     </div>
+
                     <div class="col-4 contacto-info">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Lunes a viernes de 9:00 - 18:00 y sábado de 9:30 -15:30</p>
                         <i class="fa-solid fa-phone"></i>
-                        </i><p>7721292969</p>
+                        <p>7721292969</p>
                     </div>
                     <div class="col-4 contacto-info">
                         <i class="fa-solid fa-envelope"></i>
                         <p>contacto@cloudwaremx.com</p>
-                    </div>
-                    <div class="col-4 contacto-info">
-                        <a class="link-contact-section" href="{% static 'pdfs/Profeco.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                        <p>Profeco</p>
-                    </div>
-                    <div class="col-4 contacto-info">
                         <i class="fa-solid fa-circle-check"></i>
                         <p>Folio IFT: IFT/223/UCS/AUT-COM-077/2018</p>
-                    </div>
-                    <div class="col-4 contacto-info">
-                        <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                        <p>Aviso de privacidad</p>
-                    </div>
-
-                    <div class="col-4 contacto-info">
-                        <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                        <p>Carta de derechos minimos</p>
-                    </div>
-
-                    <div class="col-4 contacto-info">
-                        
-                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                        <p>Código de politicas de gestión de tráfico</p>
-                    </div>
-
-                    <div class="col-4 contacto-info">
-                        
-                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><i class="fa-solid fa-file"></i></a>
-                        <p>Código de prácticas comerciales</p>
                     </div>
 
 
