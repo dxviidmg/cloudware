@@ -59,11 +59,14 @@
             }
 
             body{
-            padding-top: 100px;
             height: 100%; 
             background-image: url("{% static 'images/Background.jpg' %}");
             background-position: center center;
             background-size: 100% auto;
+            }
+
+            .section{
+            padding-top: 100px;
             }
 
             #packages-section, #quotes-section{
@@ -82,12 +85,12 @@
             padding-bottom: 0px;
             }
 
-            #contact-section, .link-contact-section{
+            #contact-section, .link-contact{
             background-color: black;
             color: white;
             }
 
-            .link-contact-section:hover{
+            .link-contact:hover{
                 color: gray;
             }
             .card-header {
@@ -197,7 +200,7 @@
                 </div>                
             </div>
 
-            <div id="enterprise-info-section">
+            <div id="enterprise-info-section"  class="section">
                 <div class="row">
                     <div class="col-12 col-md-6" style="background-color: #E5AB70;">
                         <h1>CloudWare</h1>
@@ -224,7 +227,7 @@
 
             </div>  
 
-            <div id="packages-section" class="container-fluid">
+            <div id="packages-section" class="container-fluid section">
                     <div class="row">
                         <div class="col-12 col-md-6" style="background-color: #6699CC;">
                             <h1>Inalambrico</h1>
@@ -272,7 +275,7 @@
                 </div>
 
             </div>
-            <div id="quotes-section">
+            <div id="quotes-section"  class="section">
                 <div class="row">
                     <div class="col-12 col-md-6" style="background-color: #E5AB70;">
                         <h1>Cotiza</h1>
@@ -312,11 +315,11 @@
                     </div>
                     <div class="col-4 contacto-info">
                         <h3>Información legal</h3>
-                        <a class="link-contact-section" href="{% static 'pdfs/Profeco.pdf'%}"><p>Profeco</p></a>
-                        <a class="link-contact-section" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><p>Aviso de privacidad</p></a>
-                        <a class="link-contact-section" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><p>Carta de derechos minimos</p></a>
-                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><p>Código de politicas de gestión de tráfico</p></a>
-                        <a class="link-contact-section" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><p>Código de prácticas comerciales</p></a>
+                        <a class="link-contact" href="{% static 'pdfs/Profeco.pdf'%}"><p>Profeco</p></a>
+                        <a class="link-contact" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><p>Aviso de privacidad</p></a>
+                        <a class="link-contact" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><p>Carta de derechos minimos</p></a>
+                        <a class="link-contact" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><p>Código de politicas de gestión de tráfico</p></a>
+                        <a class="link-contact" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><p>Código de prácticas comerciales</p></a>
                     </div>
 
                     <div class="col-4 contacto-info">
