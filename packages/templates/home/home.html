@@ -27,7 +27,7 @@
                 font-size: 30px;
             }
             #aux-section{
-                height: 80px;
+                height: 95px;
             }            
             .text {
                 padding-top: 25%;
@@ -56,13 +56,6 @@
             .fa-solid {
             font-size: 50px;
             padding: 20px;
-            }
-
-            body{
-            height: 100%; 
-            background-image: url("{% static 'images/Background.jpg' %}");
-            background-position: center center;
-            background-size: 100% auto;
             }
 
             .section{
@@ -116,7 +109,7 @@
                 font-weight: bold;
             }
             .package-name {
-                font-size: 40px;
+                font-size: 38px;
                 font-weight: bold;
                 margin: 0px;
             }
@@ -140,6 +133,11 @@
   display: block;
   padding-top: 100%;
   align-self: center!important;
+}
+
+.title {
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
         </style>
     </head>
@@ -183,7 +181,7 @@
             
             <div id="initial-section">
                 <div class="row">
-                    <div class="col-12 col-md-6" style="background-color: #A58CBF;">
+                    <div class="title col-12 col-md-6 title" style="background-color: #A58CBF;">
                         <h1>Conectando tu mundo</h1>
                     </div>
                 </div>
@@ -203,7 +201,7 @@
 
             <div id="enterprise-info-section"  class="section">
                 <div class="row">
-                    <div class="col-12 col-md-6" style="background-color: #E5AB70;">
+                    <div class="title col-12 col-md-6" style="background-color: #E5AB70;">
                         <h1>CloudWare</h1>
                     </div>
                 </div>
@@ -219,8 +217,8 @@
             </div>  
 
             <div id="image-section">
-                <div class="row">
-                    <div class="col-12 col-md-12 image-wire">
+                <div class="row justify-content-md-center">
+                    <div class="col-12 col-md-10 image-wire">
 
                     </div>
                 </div>
@@ -230,7 +228,7 @@
 
             <div id="packages-section" class="container-fluid section">
                     <div class="row">
-                        <div class="col-12 col-md-6" style="background-color: #6699CC;">
+                        <div class="title col-12 col-md-6" style="background-color: #6699CC;">
                             <h1>Inalambrico</h1>
                         </div>
                     </div>
@@ -252,7 +250,7 @@
                         </div>
 
                 <div class="row">
-                    <div class="col-12 col-md-6" style="background-color: #DC9FE2;">
+                    <div class="title col-12 col-md-6" style="background-color: #DC9FE2;">
                         <h1>Fibra óptica</h1>
                     </div>
                 </div>
@@ -278,18 +276,18 @@
             </div>
             <div id="quotes-section"  class="section">
                 <div class="row">
-                    <div class="col-12 col-md-6" style="background-color: #E5AB70;">
+                    <div class="title col-12 col-md-6" style="background-color: #E5AB70;">
                         <h1>Cotiza</h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="title col-12 col-md-6">
                         <div style="padding: 30px;">
                         <form action="." method="post" style="padding: 30px; background-color: #93278F; color: white;">
                             {%csrf_token%}
                             <div class="row">
-                                <div class="col-12 col-md-6">{{quote_form|crispy}}</div>
-                                <div class="col-12 col-md-6">{{address_form|crispy}}
+                                <div class="title col-12 col-md-6">{{quote_form|crispy}}</div>
+                                <div class="title col-12 col-md-6">{{address_form|crispy}}
                                     <br>
                                     <input type="submit" value="Cotizar" class="btn btn-light">
                                 </div>
@@ -299,7 +297,7 @@
                         </form>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="title col-12 col-md-6">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.7243570392943!2d-98.944043!3d20.270263399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d171eade3730cd%3A0x7239a69fced9d958!2sC.%20Efr%C3%A9n%20Rebolledo%2024%2C%20Centro%20Nte%2C%2042500%20Actopan%2C%20Hgo.!5e0!3m2!1ses!2smx!4v1664304732393!5m2!1ses!2smx" width="80%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
