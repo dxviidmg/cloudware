@@ -1,7 +1,7 @@
 from pickle import FALSE
 from .settings import *
 
-ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com']
+ALLOWED_HOSTS = ['cloudwaremx.herokuapp.com', 'localhost', 'www.cloudwaremx.com']
 
 import os
 
