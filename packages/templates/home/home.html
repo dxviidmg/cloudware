@@ -131,17 +131,17 @@
                 height: 80px;
             }
 
-            .card-buttons:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
-  align-self: center!important;
-}
+        .card-buttons:before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+        align-self: center!important;
+        }
 
-.title {
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-}
+        .title {
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
         </style>
     </head>
 
@@ -170,6 +170,18 @@
                                 <a class="nav-link active" aria-current="page" href="#contact-section">Contacto</a>
                             </li>
 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Información de usuarios
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="{% static 'pdfs/Profeco.pdf'%}">Profeco</a></li>
+                                    <li><a class="dropdown-item" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}">Aviso de privacidad</a></li>
+                                    <li><a class="dropdown-item" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}">Carta de derechos minimos</a></li>
+                                    <li><a class="dropdown-item" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}">Código de politicas de gestión de tráfico</a></li>
+                                    <li><a class="dropdown-item" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}">Código de prácticas comerciales</a></li>
+                                </ul>
+                            </li>
                             
                         </ul>
                     </div>
@@ -314,15 +326,6 @@
                     <div class="col-12">
                         <h1>Contacto</h1>
                     </div>
-                    <div class="col-4 contacto-info">
-                        <h3>Información legal</h3>
-                        <a class="link-contact" href="{% static 'pdfs/Profeco.pdf'%}"><p>Profeco</p></a>
-                        <a class="link-contact" href="{% static 'pdfs/AVISO DE PRIVACIDAD-OTC.pdf'%}"><p>Aviso de privacidad</p></a>
-                        <a class="link-contact" href="{% static 'pdfs/CARTA-DERECHOSMINIMOS.pdf'%}"><p>Carta de derechos minimos</p></a>
-                        <a class="link-contact" href="{% static 'pdfs/CÓDIGO DE POLÍTICAS DE GESTIÓN DE TRÁFICO-OTC.pdf'%}"><p>Código de politicas de gestión de tráfico</p></a>
-                        <a class="link-contact" href="{% static 'pdfs/CÓDIGO DE PRÁCTICAS COMERCIALES-OTC.pdf'%}"><p>Código de prácticas comerciales</p></a>
-                    </div>
-
                     <div class="col-4 contacto-info">
                         <i class="fa-solid fa-clock"></i>
                         <p>Lunes a viernes de 9:00 - 18:00 y sábado de 9:30 -15:30</p>
