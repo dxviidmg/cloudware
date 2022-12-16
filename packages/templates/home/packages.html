@@ -1,0 +1,55 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{%block content%}
+
+
+<div id="packages-section" class="container-fluid section">
+    <div class="row">
+        <div class="title col-12 col-md-6" style="background-color: #6699CC;">
+            <h1>Inalambrico</h1>
+        </div>
+    </div>
+    
+
+        <div class="row justify-content-md-center " style="padding: 30px; padding-bottom: 40px;">
+        {%for package in wireless_packages%}
+            <div class="col-6 col-md-2" >  
+                <div class="card border-0 package-background">
+                        <h2 class="package-name">{{package.name}}</h2>
+                    <div class="card-body ">
+                        <h3 class="mpbs">{{package.get_bandwidth}}</h3>
+                        <h3 class="price-wireless">${{package.price}}</h3>
+                    </div>
+                </div>
+            </div>
+        {%endfor%}
+        </div>
+
+<div class="row">
+    <div class="title col-12 col-md-6" style="background-color: #DC9FE2; margin-top: 30px;">
+        <h1>Fibra óptica</h1>
+    </div>
+</div>
+
+<div class="row">
+
+
+    <div class="row justify-content-md-center " style="padding: 30px; padding-bottom: 60px;">
+    {%for package in optic_fiber_packages%}
+    <div class="col-6 col-md-2" >  
+        <div class="card border-0 package-background">
+                <h2 class="package-name">{{package.name}}</h2>
+            <div class="card-body ">
+                <h3 class="mpbs">{{package.get_bandwidth}}</h3>
+                <h3 class="price-wireless">${{package.price}}</h3>
+            </div>
+        </div>
+    </div>
+    {%endfor%}
+    </div>
+</div>
+
+
+{%endblock content%}
