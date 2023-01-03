@@ -13,7 +13,7 @@ class Package(models.Model):
     price = models.IntegerField()
 
     def get_bandwidth(self):
-        return '{} {}'.format(self.speed_in_mbps, 'Mb')
+        return '{} {}'.format(self.speed_in_mbps, 'Mbps')
 
     def __str__(self):
         return '{} {} {}'.format(self.name, self.get_bandwidth(), self.get_type_display())
